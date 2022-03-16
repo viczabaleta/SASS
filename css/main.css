@@ -1,66 +1,107 @@
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
+
 .footer {
   background-color: #ffd500a0;
   width: 100%; }
-  .footer .grupo1 {
+
+.grupo1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 200px;
+  padding: 45px 0px; }
+  .grupo1 .box {
     width: 100%;
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 200px;
-    padding: 45px 0px; }
-    .footer .grupo1 .box {
-      width: 100%;
-      height: 100%; }
-      .footer .grupo1 .box .footer__socialmedia {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around; }
-        .footer .grupo1 .box .footer__socialmedia a {
-          display: inline-block;
-          text-decoration: none;
-          width: 45px;
-          height: 45px;
-          line-height: 45px;
-          margin-right: 10px; }
-    .footer .grupo1 .box--p {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-    .footer .grupo1 .box--logo {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .footer .grupo1 .box--logo .footer__logocirc {
-        height: 180px;
-        width: auto; }
-  .footer .grupo2 {
-    padding: 15px 10px;
-    text-align: center;
-    background-color: #919191;
-    line-height: 20px; }
+    height: 100%; }
+  .grupo1 .footer__socialmedia {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .grupo1 .footer__socialmedia a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+      border-radius: 50%; }
+    .grupo1 .footer__socialmedia img {
+      width: 45px;
+      height: 45px; }
+  .grupo1 .box--p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .grupo1 .box--logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .grupo1 .footer__logocirc {
+    height: 180px;
+    width: auto; }
+
+.grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #919191;
+  line-height: 20px; }
+
+:hover.bg--instagram {
+  background-color: white;
+  transform: scale(1.2);
+  transition: transform 0.25s ease-in-out; }
+
+:hover.bg--facebook {
+  background-color: #3a5795;
+  transform: scale(1.2);
+  transition: transform 0.25s ease-in-out; }
+
+:hover.bg--twitter {
+  background-color: #55acee;
+  transform: scale(1.2);
+  transition: transform 0.25s ease-in-out; }
+
+:hover.bg--linkedin {
+  background-color: #2867B2;
+  transform: scale(1.2);
+  transition: transform 0.25s ease-in-out; }
 
 @media (max-width: 768px) {
   .footer .grupo1 {
     width: 100%;
     grid-template-columns: 1fr;
     padding: 35px; }
+  .footer .grupo2 {
+    font-size: smaller; }
   .box {
     padding: 20px; }
   .box--p {
     display: flex;
     justify-content: center;
-    align-items: center; }
-  .footer .grupo2 {
-    font-size: smaller; } }
+    align-items: center; } }
+
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
 
 .navbar {
-  background-color: #FFD400; }
+  background-color: #FFD400;
+  height: 80px; }
+  .navbar .navbar-toggler {
+    border: none; }
 
-.navbar-toggler {
-  border: none; }
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
+
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
 
 body {
   font-family: 'Gill Sans', sans-serif;
@@ -235,6 +276,10 @@ body {
   .form__grupo2 {
     margin-top: 150px; } }
 
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
+
 .cards-sucursales {
   display: flex;
   align-items: center;
@@ -250,10 +295,6 @@ body {
       text-decoration: none;
       color: #ED1C24; }
 
-.card-link:hover {
-  color: #ED1C24;
-  font-weight: 500; }
-
 @media (max-width: 768px) {
   .cards-sucursales {
     display: flex;
@@ -262,6 +303,10 @@ body {
     justify-content: center; }
     .cards-sucursales .card-sucursal {
       margin: 30px 0; } }
+
+.card-link-hover, .navbar .nav-link, .card-link:hover {
+  color: #ED1C24;
+  font-weight: 550; }
 
 .espacios {
   display: grid;

@@ -20,12 +20,9 @@
     }
 }
 
-
-
-
 .card-link:hover {
-    color: $rojo;
-    font-weight: 500;
+    @extend .card-link-hover;
+    
 }
 
 @media (max-width: 768px) {

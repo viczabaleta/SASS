@@ -2,8 +2,14 @@
 
 .navbar {
     background-color: $amarillo;
+    height: $ancho-header;
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .nav-link  {
+        @extend .card-link-hover;
+    }
 }
 
-.navbar-toggler {
-    border: none;
-}
