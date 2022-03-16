@@ -90,8 +90,7 @@
   font-weight: 550; }
 
 .navbar {
-  background-color: #FFD400;
-  height: 80px; }
+  background-color: #FFD400; }
   .navbar .navbar-toggler {
     border: none; }
 
@@ -241,21 +240,36 @@ body {
 
 .btns {
   margin-top: 30px; }
-  .btns .btn {
-    height: 40px;
-    width: 80px;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    border: 0;
-    margin-right: 20px;
-    text-align: center; }
-    .btns .btn:hover {
-      cursor: pointer;
-      transform: scale(1.1); }
 
-.btn--yellow {
-  background-color: #FFD400; }
+.btn-amarillo {
+  background-color: #FFD400;
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: 0;
+  margin-right: 20px;
+  text-align: center;
+  transition: transform 0.25s ease-in-out; }
+  .btn-amarillo:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
+
+.btn-gris {
+  background-color: #c1c1c1;
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: 0;
+  margin-right: 20px;
+  text-align: center;
+  transition: transform 0.25s ease-in-out; }
+  .btn-gris:hover {
+    cursor: pointer;
+    transform: scale(1.1); }
 
 @media (max-width: 768px) {
   .forms {

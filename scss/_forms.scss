@@ -60,8 +60,16 @@
 
 .btns {
     margin-top: 30px;
+}
 
-    .btn {
+$btn-color: (
+    btn-amarillo: $amarillo,
+    btn-gris: #c1c1c1,
+);
+
+@each $nombreclase, $paletacolor in ($btn-color) {
+    .#{$nombreclase} {
+        background-color: $paletacolor;
         height: 40px;
         width: 80px;
         border-radius: 20px;
@@ -70,18 +78,15 @@
         border: 0;
         margin-right: 20px;
         text-align: center;
+        transition: transform 0.25s ease-in-out;
 
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
         }
     }
-}
+    }
 
-.btn--yellow {
-    background-color: $amarillo;
-
-}
 
 
 

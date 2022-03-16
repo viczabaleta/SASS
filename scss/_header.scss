@@ -2,12 +2,12 @@
 
 .navbar {
     background-color: $amarillo;
-    height: $ancho-header;
 
     .navbar-toggler {
         border: none;
     }
 
+    // no se ven los links en color rojo en el header al aplicar el extend
     .nav-link  {
         @extend .card-link-hover;
     }
