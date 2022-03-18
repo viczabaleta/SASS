@@ -361,7 +361,10 @@ body {
     justify-content: center; }
     .cards-sucursales .card-sucursal {
       margin: 30px 0;
-      width: 100%; } }
+      width: 380px; }
+      .cards-sucursales .card-sucursal:hover {
+        transform: none;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); } }
 
 .card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
@@ -378,7 +381,13 @@ body {
     border-radius: 25px;
     overflow: hidden;
     justify-self: center;
-    border: solid 5px #ED1C24; }
+    border: solid 5px #ED1C24;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease; }
+    .espacios .image .image__img {
+      width: 100%; }
+    .espacios .image:hover {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); }
   .espacios .image__overlay {
     position: absolute;
     top: 0;
