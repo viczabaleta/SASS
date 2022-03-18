@@ -1,27 +1,107 @@
 @import "variables";
 
 .cards-sucursales {
+
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 50px 0;
+
+    margin-bottom: 80px;
+
 
     .card-sucursal {
-        border-radius: 25px;
+        width: 380px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 180px 50px;
+        grid-template-areas: "image" "text" "links";
         overflow: hidden;
-        background-color: $amarillo;
-        .list-group-item {
-            background-color: $amarillo;
-        }
-        .card-link {
-            text-decoration: none;
-            color: $rojo;
-        }
-    }
-}
 
-.card-link:hover {
-    @extend .card-link-hover;
+        border-radius: 20px;
+        border: solid 2px $rojo;
+        background: rgba(255, 255, 255, 0.517);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        .card_img {
+            grid-area: image;
+            
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .card_text {
+            grid-area: text;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .card_title {
+                margin: 10px;
+                letter-spacing: 3px;
+            }
+
+            .card_info {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            
+        }
+
+        .card_links {
+            grid-area: links;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            border-top: solid 2px $rojo;
+
+            .card_link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                width: 100%;
+                justify-self: center;
+                text-decoration: none;
+                color: $rojo;
+                &:hover {@extend .card-link-hover;
+                }
+            }
+
+            .card_link--borde {
+                
+                border-left: solid 2px $rojo;
+
+            }
+
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        }
+
+
+        
+        
+    }
+        
+        
+        
     
 }
 
@@ -35,8 +115,9 @@
 
         .card-sucursal {
             margin: 30px 0;
+            width: 100%;
         }
     }
-    }
+}
     
     

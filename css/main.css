@@ -1,4 +1,5 @@
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@700&display=swap");
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 
@@ -31,45 +32,31 @@
     .grupo1 .footer__socialmedia img {
       width: 45px;
       height: 45px; }
-  .grupo1 .box--p {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-  .grupo1 .box--logo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .grupo1 .footer__logocirc {
-    height: 180px;
-    width: auto; }
+      .grupo1 .footer__socialmedia img:hover {
+        transform: scale(1.2);
+        transition: transform 0.25s ease-in-out; }
+
+.box--p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.box--logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__logocirc {
+  height: 180px;
+  width: auto; }
 
 .grupo2 {
   padding: 15px 10px;
   text-align: center;
   background-color: #919191;
   line-height: 20px; }
-
-:hover.bg--instagram {
-  background-color: white;
-  transform: scale(1.2);
-  transition: transform 0.25s ease-in-out; }
-
-:hover.bg--facebook {
-  background-color: #3a5795;
-  transform: scale(1.2);
-  transition: transform 0.25s ease-in-out; }
-
-:hover.bg--twitter {
-  background-color: #55acee;
-  transform: scale(1.2);
-  transition: transform 0.25s ease-in-out; }
-
-:hover.bg--linkedin {
-  background-color: #2867B2;
-  transform: scale(1.2);
-  transition: transform 0.25s ease-in-out; }
 
 @media (max-width: 768px) {
   .footer .grupo1 {
@@ -85,7 +72,7 @@
     justify-content: center;
     align-items: center; } }
 
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 
@@ -94,25 +81,35 @@
   .navbar .navbar-toggler {
     border: none; }
 
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 
 body {
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Gill Sans', 'Montserrat', sans-serif;
   font-size: 18px;
   background-color: #ffd5005a; }
+
+.index-info {
+  background-color: #FFD400; }
+  .index-info h1 {
+    margin-bottom: 20px; }
+  .index-info p {
+    margin: 20px; }
+
+.empresas {
+  margin: 70px 0; }
 
 .grid--empresas {
   display: grid;
   /* 6 columnas */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   /* 1 filas */
-  grid-template-rows: 150px; }
+  grid-template-rows: 200px; }
   .grid--empresas .empresa {
     width: 130px;
     height: auto;
@@ -290,24 +287,71 @@ body {
   .form__grupo2 {
     margin-top: 150px; } }
 
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 
 .cards-sucursales {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 50px 0; }
+  margin-bottom: 80px; }
   .cards-sucursales .card-sucursal {
-    border-radius: 25px;
+    width: 380px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 180px 50px;
+    grid-template-areas: "image" "text" "links";
     overflow: hidden;
-    background-color: #FFD400; }
-    .cards-sucursales .card-sucursal .list-group-item {
-      background-color: #FFD400; }
-    .cards-sucursales .card-sucursal .card-link {
-      text-decoration: none;
-      color: #ED1C24; }
+    border-radius: 20px;
+    border: solid 2px #ED1C24;
+    background: rgba(255, 255, 255, 0.517);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+    cursor: pointer; }
+    .cards-sucursales .card-sucursal .card_img {
+      grid-area: image; }
+      .cards-sucursales .card-sucursal .card_img img {
+        height: auto;
+        width: 100%; }
+    .cards-sucursales .card-sucursal .card_text {
+      grid-area: text;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .cards-sucursales .card-sucursal .card_text .card_title {
+        margin: 10px;
+        letter-spacing: 3px; }
+      .cards-sucursales .card-sucursal .card_text .card_info {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 0; }
+    .cards-sucursales .card-sucursal .card_links {
+      grid-area: links;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      border-top: solid 2px #ED1C24; }
+      .cards-sucursales .card-sucursal .card_links .card_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        justify-self: center;
+        text-decoration: none;
+        color: #ED1C24; }
+      .cards-sucursales .card-sucursal .card_links .card_link--borde {
+        border-left: solid 2px #ED1C24; }
+    .cards-sucursales .card-sucursal:hover {
+      transform: scale(1.1);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); }
 
 @media (max-width: 768px) {
   .cards-sucursales {
@@ -316,9 +360,10 @@ body {
     flex-direction: column;
     justify-content: center; }
     .cards-sucursales .card-sucursal {
-      margin: 30px 0; } }
+      margin: 30px 0;
+      width: 100%; } }
 
-.card-link-hover, .navbar .nav-link, .card-link:hover {
+.card-link-hover, .navbar .nav-link, .cards-sucursales .card-sucursal .card_links .card_link:hover {
   color: #ED1C24;
   font-weight: 550; }
 

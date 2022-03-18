@@ -34,9 +34,13 @@
                 img {
                     width: 45px;
                     height: 45px;
-                    
-                }
+                    &:hover{ 
+                        transform: scale(1.2);
+                        transition: transform 0.25s ease-in-out;
+                     }
+                  }
             }
+    }
 
         .box--p  {
             display: flex;
@@ -56,10 +60,6 @@
             width: auto;   
         }
     
-}
-
-    
-
 .grupo2 {
         padding: 15px 10px;
         text-align: center;
@@ -67,26 +67,6 @@
         line-height: 20px;
 }
     
-
-
-// MAPS
-
- $colors: (
-     instagram: rgb(255, 255, 255),
-     facebook:  #3a5795,
-     twitter: #55acee,
-     linkedin: #2867B2,
- );
-
- @each $name-color, $bgcolor in $colors {
-    &:hover.bg--#{$name-color} {
-       background-color: $bgcolor; 
-       transform: scale(1.2);
-       transition: transform 0.25s ease-in-out;
-    }
- }
-
-
 
 @media (max-width: 768px) {
 

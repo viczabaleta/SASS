@@ -1,18 +1,39 @@
 @import "variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@700&display=swap');
+
 body {
-    font-family: 'Gill Sans', sans-serif;
+    font-family: 'Gill Sans', 'Montserrat', sans-serif;
     font-size: 18px;
     background-color: $amarillo_bg;
 }
 
+.index-info {
+    background-color: $amarillo;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+
+}
+
+.empresas {
+    margin: 70px 0;
+}
+
 .grid--empresas {
+
 
     display: grid;  
                     /* 6 columnas */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
                        /* 1 filas */
-    grid-template-rows: 150px; 
+    grid-template-rows: 200px; 
 
     .empresa {
         width: 130px;
