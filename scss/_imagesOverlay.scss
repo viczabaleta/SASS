@@ -4,6 +4,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 400px);
+
+
     .image {
         position: relative;
         width: 600px;
@@ -102,6 +104,16 @@
             
         }
         
+    }
+
+    .image__overlay:hover > * {
+        transform: none;
+        transition: none;
+    }
+
+    .image__overlay > * {
+        transform: none;
+        transition: none;
     }
     
     

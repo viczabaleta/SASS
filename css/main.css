@@ -442,4 +442,10 @@ body {
       opacity: 1; }
       .espacios .image__overlay .image__desc {
         margin-top: 0;
-        font-size: smaller; } }
+        font-size: smaller; }
+  .image__overlay:hover > * {
+    transform: none;
+    transition: none; }
+  .image__overlay > * {
+    transform: none;
+    transition: none; } }
